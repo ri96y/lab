@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Kay's Laboratory</title>
+</head>
+
+<body>
+    <header><strong>Kay's Laboratory</strong></header>
+
+    <br><br>
+    <a href="..">Go back</a>
+    <br><br><br><br>
+
+    I will start this lab by crediting the one who discovered the breed personality, Shaina@Kizmet!
+    Thank you for sharing such an awesome discovery!
+    With the info you shared, we can now do many new things that were impossible for many years.
+
+    <br><br>
+
+    First of all, breed files are different from pet files because they have no checksum.
+    This means that this will make it much easier to edit the personality of a breed than the personality of an individual pet.
+    If you've touched a hex editor before, this tutorial should be very easy to follow!
+
+    <br><br>
+
+    In this tutorial we will use the siamese breed. All breeds have a limit to how many traits you can alter.
+    The siamese breed is perfect because they have many editable traits!
+    (Special note: the dogz breeds all tend to not have enough editable traits to alter every gene.
+    This sucks, but I will show you how you can use this info to create fully modified catz and dogz!)
+
+    <br><br><br><br><br>
+    <h2>How Do I Do It?</h2>
+    <br><br>
+
+    I will open the siamese breed in Hex Workshop (please back up everything you hex!)
+
+    <br><br>
+
+    Look for a portion in the hex file that looks like this:
+
+    <br><br><img src="chunk.png">
+
+    <br><br>
+
+    To find it you can scroll down until you see the first chunk after the first sea of 00's, or you can search for this value:
+
+    <br><br><img src="search.png">
+
+    <br><br>
+
+    NOTE: You cannot do this with a unibreed, their personality chunk is completely missing.
+
+    <br><br>
+
+    Every j.j.W....l represents a trait.
+    The period in between the j.j holds the value of the trait, the period between the j.W corresponds to the trait it's modifying,
+    and the l or p at the very end is an on/off switch. For each of your edited values to work, you will need them to end with an l.
+
+    <br><br><img src="values2.png">
+    <br><img src="chart.png">
+    <br><br>By the way, Jules@Secretpetz made some very useful charts of default values and all the breed traits. Take a look!
+    <br><a href="https://secretpetz.neocities.org/trait%20defaults.htm">Defaults</a>
+    <br><a href="https://secretpetz.neocities.org/catz%20traits.htm">Catz Traits</a>
+    <br><a href="https://secretpetz.neocities.org/dogz%20traits.htm">Dogz Traits</a>
+
+
+    <br><br><br><br><br>
+    <h2>Let's Do It!</h2>
+    <br><br>
+
+    I'm gonna make a siamese cat that has 100 everything! I will assign value 05(always 100) to all of the traits,
+    and activate any deactivated traits with l.
+
+    <br><br><img src="edit.png">
+
+    <br><br>
+
+    Every byte I just edited is in red.
+    Note how I only had enough values to make it to value 12.
+    The alley cat is the only breed with enough values for full editability, but it will still have perma skinniness regardless of what you change.
+
+    <br><br>
+
+    Now to adopt our siamese cat! Remember to close hex workshop, or it may prevent your edited breed from being opened by the game.
+
+    <br><br><img src="siamese.png">
+
+    <br><br> There's our (almost) 100 everything kitty! Click <a href="https://cdn.discordapp.com/attachments/841470733469089832/852487829644771388/Si.pet">here</a> to play with Si!
+
+
+    <br><br><br><br><br>
+    <h2>Having Full Control</h2>
+    <br><br>
+
+    But what if you wanna edit all the traits without the perma skinniness from the alley breed?
+    Sadly, we can only do this with the swapping method. We can't make a breed file with all editable traits and without perma skinniness.
+    And although the siamese breed does a good enough job since not all the traits are useful for editing, none of the dog breeds have as many editable traits.
+    The only solution to this as of now is to generate individual pets via the swapping method talked about <a href="../transform">here</a>.
+
+    <br><br>
+
+    Using this method I was able to use the alley file to create this puppy:
+
+    <br><br><img src="mutt.png">
+
+    <br><br>What a cutie! Click <a href="https://cdn.discordapp.com/attachments/841470733469089832/852487831377149972/Zero.pet">here</a> to play with Zero!
+
+    <br><br><br><br>
+
+</body>
+
+</html>
