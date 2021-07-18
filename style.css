@@ -1,0 +1,18 @@
+body{
+    background: #444;
+    font-family: arial;
+}
+a{
+    color: black;
+}
+header{
+    text-align: center;
+    font-size: 35px;
+    padding: 15px;
+    background: #00000030;
+    margin-bottom: 10px;
+    border: 2px outset gray;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
